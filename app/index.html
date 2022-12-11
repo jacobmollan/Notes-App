@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Notes</title>
+</head>
+<body style="background-color: #121212;" class="text-white font-source">
+    <div class="flex items-center mt-10 ml-12 mb-4">
+        <h1 class="capitalize font-bold leading-tight text-6xl mt-0 mb-2 ">Notes</h1>
+        <div class="ml-2 p py-1 px-4 text-sm bg-violet-500 border-2 border-solid rounded-lg border-violet-200 transition-transform hover:scale-95 ease-in-out duration-100 cursor-pointer antialiased hover:subpixel-antialiased active:scale-110 select-none">
+            <p>ver <span id="version"></span></p>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <form class="ml-12">
+            <div class="mb-6">
+                <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title:</label>
+                <input type="text" id="title-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            </div>
+            <div class="mb-3 align-top">
+                <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white overflow-hidden whitespace-normal">Note Text:</label>
+                <textarea id="large-input" class="resize-none break-words block w-96 h-64 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+            </div>
+            <div class="mb-8 ">
+                <button type="button" id="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </div>
+            <div></div>
+        </form>
+    </div>
+    <div class="mx-12">
+        <div id="grid-test"class="gap-4 grid auto-cols-max 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3"></div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
